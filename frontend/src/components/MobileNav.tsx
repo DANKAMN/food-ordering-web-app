@@ -13,7 +13,7 @@ const MobileNav = () => {
         <SheetContent className='space-y-3'>
             <SheetHeader>
                 <SheetTitle>
-                    <span>Welcome to DanielEats.com</span>
+                    <span>Welcome to Daniel Eats</span>
                 </SheetTitle>
                 <Separator />
                 <SheetDescription className="flex">
