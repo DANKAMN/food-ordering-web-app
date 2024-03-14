@@ -6,9 +6,8 @@ const Footer = () => {
             <span className="text-3xl text-white tracking-tighter">
                 Daniel Eats
             </span>
-            <span className="text-white font-bold track-tight flex gap-4">
-                <span>Privacy Policy</span>
-                <span>Terms Of Service</span>
+            <span className="text-white track-tight flex gap-4">
+                <span>© 2024 Daniel Technologies Inc.</span>
             </span>
         </div>
     </div>
