@@ -1,4 +1,3 @@
-import React from 'react'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
 import { CircleUserRound, Menu } from 'lucide-react'
 import { Separator } from './ui/separator'
