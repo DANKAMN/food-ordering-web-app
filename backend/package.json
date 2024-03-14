@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "dev": "tsx --watch src/index.ts",
-    "build": "npm install && npx tsc",
+    "build": "npm install  && npm install --prefix frontend && npx tsc && npm run build --prefix frontend",
     "start": "node dist/index.js"
   },
   "keywords": [],
