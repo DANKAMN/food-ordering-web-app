@@ -8,7 +8,7 @@ import path from 'path'
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string)
 .then(() => console.log("Connected to database!"))
 
-const __dirname = path.resolve()
+const _dirname = path.resolve()
 
 const app = express();
 const PORT = 7000;
@@ -22,10 +22,10 @@ app.get("/health", async (req: Request, res: Response) => {
 
 app.use("/api/my/user", myUserRoute)
 
-app.use(express.static(path.join(__dirname, '../../frontend/dist')));
+app.use(express.static(path.join(_dirname, '../../frontend/dist')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../frontend/dist', 'index.html'));
+    res.sendFile(path.join(_dirname, '../../frontend/dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
