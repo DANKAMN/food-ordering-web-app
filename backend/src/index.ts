@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/health", async (req: Request, res: Response) => {
-    res.send({ meesage: "health OK!" })
+    res.send({ message: "health OK!" })
 })
 
 app.use("/api/my/user", myUserRoute)
@@ -25,7 +25,7 @@ app.use("/api/my/user", myUserRoute)
 app.use(express.static(path.join(_dirname, '../../frontend/dist')))
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(_dirname, 'frontend', 'dist', 'index.html'))
+    res.sendFile(path.join(_dirname, '../../frontend/dist', 'index.html'))
 })
 
 app.listen(PORT, () => {
