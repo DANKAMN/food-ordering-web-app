@@ -22,7 +22,7 @@ app.get("/health", async (req: Request, res: Response) => {
 
 app.use("/api/my/user", myUserRoute)
 
-app.use(express.static(path.join(_dirname, '/frontend/dist')))
+app.use(express.static(path.join(_dirname, '../../frontend/dist')))
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(_dirname, 'frontend', 'dist', 'index.html'))
