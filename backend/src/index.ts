@@ -12,6 +12,10 @@ const PORT = 7000;
 app.use(express.json());
 app.use(cors());
 
+app.get("/health", async (req: Request, res: Response) => {
+    res.send({ meesage: "health OK!" })
+})
+
 app.use("/api/my/user", myUserRoute)
 
 app.listen(PORT, () => {
