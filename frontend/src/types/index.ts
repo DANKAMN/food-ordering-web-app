@@ -6,3 +6,10 @@ export type User = {
     city: string,
     country: string
 }
+
+export type OrderStatus =
+  | "placed"
+  | "paid"
+  | "inProgress"
+  | "outForDelivery"
+  | "delivered";
