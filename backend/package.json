@@ -4,7 +4,7 @@
   "description": "full stack food ordering platform",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "tsx --watch src/index.ts & npm run stripe",
+    "dev": "tsx --watch src/index.ts",
     "stripe": "stripe listen --forward-to http://localhost:7000/api/order/checkout/webhook",
     "build": "npm install && npx tsc",
     "start": "node dist/index.js"
